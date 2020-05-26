@@ -46,7 +46,7 @@ function CottonPlant.sv_n_harvest( self, params, player )
 	if not self.harvested and sm.exists( self.harvestable ) then
 		local container = player:getInventory()
 		if sm.container.beginTransaction() then
-			sm.container.collect( container, obj_resource_cotton, 10 )
+			sm.container.collect( container, obj_resource_cotton, Mod_EasySurvival.cottonplant_loot_nb_items )
 			if sm.container.endTransaction() then
 				sm.effect.playEffect( "Cotton - Picked", self.harvestable.worldPosition )
 				sm.harvestable.create( hvs_farmables_growing_cottonplant, self.harvestable.worldPosition, self.harvestable.worldRotation )

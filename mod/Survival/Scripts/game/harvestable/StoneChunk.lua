@@ -28,10 +28,14 @@ end
 function StoneChunk.server_onMelee( self, position, attacker, damage )
 	if self.data then
 		if self.data.chunkSize <= 2 then
-			self:sv_onHit( self.DamagerPerHit, attacker )
+			self:sv_onHit( self.DamagerPerHit )
 		else
-			if type( attacker ) == "Player" then
-				self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_STONE_TOO_BIG}" )
+			if Mod_EasySurvival.sledgehammer_godmode == true then
+				self:sv_onHit( self.DamagerPerHit )
+			else
+				if type( attacker ) == "Player" then
+					self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_STONE_TOO_BIG}" )
+				end
 			end
 			if g_survivalDev then
 				self:sv_onHit( self.DamagerPerHit )

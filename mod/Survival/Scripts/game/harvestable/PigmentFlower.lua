@@ -38,7 +38,7 @@ function PigmentFlower.sv_n_harvest( self, params, player )
 	if not self.harvested and sm.exists( self.harvestable ) then
 		local container = player:getInventory()
 		if sm.container.beginTransaction() then
-			sm.container.collect( container, obj_resource_flower, 10 )
+			sm.container.collect( container, obj_resource_flower, Mod_EasySurvival.pigmentflower_loot_nb_items )
 			if sm.container.endTransaction() then
 				sm.effect.playEffect( "Pigmentflower - Picked", self.harvestable.worldPosition )
 				sm.harvestable.create( hvs_farmables_growing_pigmentflower, self.harvestable.worldPosition, self.harvestable.worldRotation )

@@ -26,10 +26,13 @@ function WoodHarvestable.server_onMelee( self, hitPos, attacker, damage )
 		if self.data.type == "small" or self.data.type == "medium" then
 			self:sv_onHit( DamagerPerHit, hitPos )
 		elseif self.data.type == "large" then
-			if type( attacker ) == "Player" then
-				self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_TREE_TOO_BIG}" )
+			if Mod_EasySurvival.sledgehammer_godmode == true then
+				self:sv_onHit( DamagerPerHit, hitPos )
+			else
+				if type( attacker ) == "Player" then
+					self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_TREE_TOO_BIG}" )
+				end
 			end
-
 			if g_survivalDev then
 				self:sv_onHit( DamagerPerHit, hitPos )
 			end

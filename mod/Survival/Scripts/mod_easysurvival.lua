@@ -4,7 +4,7 @@
 -- The purpose of this mod is to make the Survival mode of
 -- ScrapMechanic a bit easier and faster.
 --
--- Version : v0.2.1
+-- Version : v0.2.2
 --
 
 Mod_EasySurvival = class()
@@ -12,6 +12,10 @@ Mod_EasySurvival = class()
 -- [ Tools ] ===================================================================
 
 Mod_EasySurvival.sledgehammer_dammage = 500
+
+-- Godmode : when set to true, SledgeHammer is capable of
+-- destroying big trees and stones
+Mod_EasySurvival.sledgehammer_godmode = true
 
 -- [ Refinery and refining by hand ] ===========================================
 
@@ -23,6 +27,7 @@ Mod_EasySurvival.refine_loot_nb_items = 256
 
 Mod_EasySurvival.raw_stone_health   = 100
 Mod_EasySurvival.chunk_stone_health = 1
+
 Mod_EasySurvival.raw_tree_health    = 100
 Mod_EasySurvival.chunk_tree_health  = 1
 

@@ -102,8 +102,15 @@ function TreeTrunk.server_onMelee( self, position, attacker, damage )
 				self:sv_triggerCreak( position )
 			end
 		elseif self.data.treeType == "large" then
-			if type( attacker ) == "Player" then
-				self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_TREE_TOO_BIG}" )
+			if Mod_EasySurvival.sledgehammer_godmode == true then
+				self:sv_onHit( DamagerPerHit )
+				if self.sv.health > 0 then
+					self:sv_triggerCreak( position )
+				end
+			else
+				if type( attacker ) == "Player" then
+					self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_TREE_TOO_BIG}" )
+				end
 			end
 			if g_survivalDev then
 				self:sv_onHit( DamagerPerHit )

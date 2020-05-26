@@ -22,8 +22,12 @@ function StoneHarvestable.sv_init( self )
 end
 
 function StoneHarvestable.server_onMelee( self, hitPos, attacker, damage )
-	if type( attacker ) == "Player" then
-		self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_STONE_TOO_BIG}" )
+	if Mod_EasySurvival.sledgehammer_godmode == true then
+		self:sv_onHit( self.DamagerPerHit, hitPos )
+	else
+		if type( attacker ) == "Player" then
+			self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_STONE_TOO_BIG}" )
+		end
 	end
 	if g_survivalDev then
 		self:sv_onHit( self.DamagerPerHit, hitPos )

@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.2.2
+
+ + Added SledgeHammer godmode : can destroy big trees and stones
+
 ## Version 0.2.1
 
  + Support for Refinery, refine by hand
