@@ -18,4 +18,4 @@ To uninstall the mod, go to steam, right click on ScrapMechanic, then properties
 
 Then go to `Local files` and click on check game files integrity :
 
-![](./docs/imgs/steam_scrapmechanic_properties.png)
+![](./docs/imgs/steam_verification_install.png)
