@@ -29,7 +29,7 @@ Mod_EasySurvival.chunk_tree_health  = 1
 -- [ Harvestables ] ============================================================
 
 Mod_EasySurvival.cottonplant_loot_nb_items   = 10
-Mod_EasySurvival.oilgeyser_loot_nb_items     = 10
+Mod_EasySurvival.oilgeyser_loot_nb_items     = 20
 Mod_EasySurvival.slimyclam_loot_nb_items     = 10
 Mod_EasySurvival.pigmentflower_loot_nb_items = 10
 --
