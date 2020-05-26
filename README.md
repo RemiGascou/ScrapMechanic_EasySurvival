@@ -2,9 +2,15 @@
 
 The Survival folder is usually in `C:/Program Files (x86)/Steam/steamapps/common/Scrap Mechanic/Survival`
 
+Just replace your survival folder by this one, or change manually each file as follows :
+
 ## Hammer - Damage per hits
 
-In file `Survival/Scripts/game/tools/Sledgehammer.lua` set the damage amount on line 5
+In file `Survival/Scripts/game/tools/Sledgehammer.lua` set the damage amount on line 5 :
+
+```lua
+local Damage = 5
+```
 
 
 ## Refinery - Number of blocks
