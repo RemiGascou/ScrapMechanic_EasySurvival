@@ -42,11 +42,11 @@ function HarvestCore.client_onRefresh( self )
 	self:cl_init()
 end
 
-function HarvestCore.cl_init( self ) 
+function HarvestCore.cl_init( self )
 	self.client_refining = false
 	self.client_refineTime = 8.0
 	self.client_refineElapsed = 0.0
-	
+
 	self.client_effect = sm.effect.createEffect( "Harvestable - Marker", self.interactable )
 	self.client_effect:start()
 end
@@ -55,7 +55,7 @@ function HarvestCore.client_onInteract( self, user, state )
 	local recipe = g_refineryRecipes[tostring( self.shape.shapeUuid )]
 	local player = user:getPlayer()
 	if recipe and player then
-		if sm.container.canCollect( player:getInventory(), recipe.itemId, recipe.quantity ) then
+		if sm.container.canCollect( player:getInventory(), recipe.itemId, ModLootTable.refine_loot_nb_items ) then
 			self.client_refining = state
 			local params = { user = user, state = state }
 			self.network:sendToServer( "sv_n_setRefiningState", params )
@@ -77,7 +77,7 @@ function HarvestCore.sv_n_setRefiningState( self, params )
 		end
 		self.users = usersLeft
 	end
-	
+
 	if sm.exists( params.user ) and params.user:getPlayer() ~= nil then
 		sm.event.sendToPlayer( params.user:getPlayer(), "sv_e_setRefiningState", params )
 	end
@@ -101,17 +101,17 @@ function HarvestCore.client_onUpdate( self, dt )
 end
 
 function HarvestCore.sv_refine( self, player )
-	
+
 	if sm.exists( self.shape ) then
 		local recipe = g_refineryRecipes[tostring( self.shape.shapeUuid )]
 		sm.container.beginTransaction()
 		if recipe then
-			sm.container.collect( player:getInventory(), recipe.itemId, recipe.quantity )
+			sm.container.collect( player:getInventory(), recipe.itemId, ModLootTable.refine_loot_nb_items )
 		end
 		if sm.container.endTransaction() then
 			self.shape:destroyShape()
 			sm.event.sendToPlayer( player, "sv_e_staminaSpend", RefineStaminaCost )
 		end
 	end
-	
+
 end

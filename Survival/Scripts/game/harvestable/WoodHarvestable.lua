@@ -2,6 +2,7 @@
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 
+
 WoodHarvestable = class( nil )
 
 local TrunkHealth = 100
@@ -35,12 +36,12 @@ function WoodHarvestable.server_onMelee( self, hitPos, attacker, damage )
 	end
 end
 
-function WoodHarvestable.sv_onHit( self, damage, position )	
-	
+function WoodHarvestable.sv_onHit( self, damage, position )
+
 	if not sm.exists( self.harvestable ) or self.destroyed then
 		return
 	end
-	
+
 	if self.treeParts == nil then
 		-- Create a table of tree parts that can remember damage to the tree
 		self.treeParts = {}
@@ -62,15 +63,15 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 							worldPosition = harvestablePosition + harvestableRotation * upperLocalPosition * 0.25 + harvestableRotation * sm.vec3.new( 0, -1, 0 )
 						end
 						self.treeParts[#self.treeParts+1] = { shapeUuid = shapeUuid, centerPosition = worldPosition, damage = 0 }
-					end			
+					end
 				end
 			end
 		end
 	end
-	
+
 	local harvestablePosition = sm.harvestable.getPosition( self.harvestable )
 	local harvestableRotation = sm.harvestable.getRotation( self.harvestable )
-	
+
 	local rattlePosition = harvestablePosition
 	if self.data and self.data.crownHeight then
 		rattlePosition = harvestablePosition + ( harvestableRotation * sm.vec3.new( 0, 1, 0 ) ) * self.data.crownHeight
@@ -80,7 +81,7 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 	-- Find the tree part that was closest to the attack
 	local closestHitIdx = nil
 	local closestHitDistance = math.huge
-	for i, treePart in ipairs( self.treeParts ) do	
+	for i, treePart in ipairs( self.treeParts ) do
 		if position then
 			local distance = ( treePart.centerPosition - position ):length()
 			if closestHitIdx then
@@ -94,7 +95,7 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 			end
 		end
 	end
-	
+
 	-- Tally damage for the tree part
 	if closestHitIdx then
 		self.treeParts[closestHitIdx].damage = self.treeParts[closestHitIdx].damage + damage
@@ -109,13 +110,13 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 					end
 					placementOffset = harvestableRotation * placementOffset
 					local bodies = sm.creation.importFromFile( nil, self.data.blueprint, harvestablePosition + placementOffset, harvestableRotation )
-					
+
 					-- Parts inherit damage from the harvestable
 					for _, currentBody in ipairs( bodies ) do
 						local shapes = currentBody:getShapes()
 						for _, currentShape in ipairs( shapes ) do
 							currentShape:setColor( color )
-							for i, treePart in ipairs( self.treeParts ) do	
+							for i, treePart in ipairs( self.treeParts ) do
 								if currentShape:getShapeUuid() == treePart.shapeUuid then
 									currentShape.interactable:setParams( { inheritedDamage = treePart.damage, pristine = true } )
 								end
@@ -124,7 +125,7 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 					end
 				end
 			end
-			
+
 			self.destroyed = true
 			sm.effect.playEffect( "Tree - LogAppear", harvestablePosition )
 			sm.harvestable.destroy(self.harvestable)
@@ -132,7 +133,7 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 			self:sv_triggerCreak( self.treeParts[closestHitIdx] )
 		end
 	end
-	
+
 end
 
 function WoodHarvestable.sv_triggerCreak( self, treePart )
@@ -170,15 +171,15 @@ function WoodHarvestable.client_onCollision( self, other, collisionPosition, sel
 
 	if impactVelocity > 0.1 and sm.exists( self.harvestable ) then
 		local harvestablePosition = sm.harvestable.getPosition( self.harvestable )
-		local harvestableRotation = sm.harvestable.getRotation( self.harvestable )			
+		local harvestableRotation = sm.harvestable.getRotation( self.harvestable )
 		local treeUp = sm.vec3.new( 0, 1, 0 )
-		
+
 		local rattlePosition = harvestablePosition
-		
+
 		if self.data and self.data.crownHeight then
 			rattlePosition = harvestablePosition + ( harvestableRotation * treeUp ) * self.data.crownHeight
 		end
-		
+
 		sm.effect.playEffect( "Tree - LeafRattle", rattlePosition, nil, nil, nil, { Velocity_max_50 = impactVelocity } )
 	end
 end

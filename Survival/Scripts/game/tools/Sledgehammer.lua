@@ -1,8 +1,9 @@
 
 dofile "$GAME_DATA/Scripts/game/AnimationUtil.lua"
 dofile "$SURVIVAL_DATA/Scripts/util.lua"
+dofile "$SURVIVAL_DATA/Scripts/mod_loottable.lua"
 
-local Damage = 500
+local Damage = ModLootTable.sledgehammer_dammage
 
 Sledgehammer = class()
 

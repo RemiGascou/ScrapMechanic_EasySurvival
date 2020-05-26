@@ -1,54 +1,17 @@
-# Cheats and where to change stuff
+# Modding the Loottable of Scrap Mechanic
 
-The Survival folder is usually in `C:/Program Files (x86)/Steam/steamapps/common/Scrap Mechanic/Survival`
+![](./docs\imgs\scrapmechanic_logo.png)
 
-Just replace your survival folder by this one, or change manually each file as follows :
+The purpose of this mod is to make the Survival mode of ScrapMechanic a bit easier and faster.
 
-## Hammer - Damage per hits
+## Installing the Mod
 
-In file `Survival/Scripts/game/tools/Sledgehammer.lua` set the damage amount on line 5 :
+## Uninstalling the Mod
 
-```lua
-local Damage = 5
-```
+To uninstall the mod, go to steam, right click on ScrapMechanic, then properties :
 
+![](./docs/imgs/steam_scrapmechanic_properties.png)
 
-## Refinery - Number of blocks
+Then go to `Local files` and click on check game files integrity :
 
-To get 256 blocks (a stack) per refine, in file `Survival/Scripts/game/interactables/Refinery.lua`, change line 459:
-
-```lua
-objContainer = FindContainerToCollectTo( self.sv.containers, recipe.itemId, recipe.quantity )
-```
-
-to
-
-```lua
-objContainer = FindContainerToCollectTo( self.sv.containers, recipe.itemId, 256 )
-```
-
-And change line 469 from :
-
-```lua
-sm.container.collect( outputContainer, recipe.itemId, recipe.quantity, true )
-```
-
-to
-
-```lua
-sm.container.collect( outputContainer, recipe.itemId, 256, true )
-```
-
-## Refining by hand
-
-To get 256 blocks (a stack) per refine, in file `Survival/Scripts/game/harvestable/HarvestCore.lua`, change line 129 from :
-
-```lua
-sm.container.collect( player:getInventory(), recipe.itemId, recipe.quantity )
-```
-
-to :
-
-```lua
-sm.container.collect( player:getInventory(), recipe.itemId, 256 )
-```
+![](./docs/imgs/steam_scrapmechanic_properties.png)
