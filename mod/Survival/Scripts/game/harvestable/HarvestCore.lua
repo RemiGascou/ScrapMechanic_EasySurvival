@@ -1,5 +1,8 @@
 -- HarvestCore.lua --
 
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+
 HarvestCore = class( nil )
 HarvestCore.resetStateOnInteract = false
 
@@ -55,7 +58,7 @@ function HarvestCore.client_onInteract( self, user, state )
 	local recipe = g_refineryRecipes[tostring( self.shape.shapeUuid )]
 	local player = user:getPlayer()
 	if recipe and player then
-		if sm.container.canCollect( player:getInventory(), recipe.itemId, ModLootTable.refine_loot_nb_items ) then
+		if sm.container.canCollect( player:getInventory(), recipe.itemId, Mod_EasySurvival.refine_loot_nb_items ) then
 			self.client_refining = state
 			local params = { user = user, state = state }
 			self.network:sendToServer( "sv_n_setRefiningState", params )
@@ -106,7 +109,7 @@ function HarvestCore.sv_refine( self, player )
 		local recipe = g_refineryRecipes[tostring( self.shape.shapeUuid )]
 		sm.container.beginTransaction()
 		if recipe then
-			sm.container.collect( player:getInventory(), recipe.itemId, ModLootTable.refine_loot_nb_items )
+			sm.container.collect( player:getInventory(), recipe.itemId, Mod_EasySurvival.refine_loot_nb_items )
 		end
 		if sm.container.endTransaction() then
 			self.shape:destroyShape()

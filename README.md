@@ -1,6 +1,8 @@
-# Modding the Loottable of Scrap Mechanic
+# EasySurvival Mod for Scrap Mechanic
 
-![](./docs/imgs/scrapmechanic_logo.png)
+![](./docs/imgs/mod_banner.png)
+
+**Current version :** 0.2.1 [Download](./releases/EasySurvival_v0.2.1.zip)
 
 The purpose of this mod is to make the Survival mode of ScrapMechanic a bit easier and faster.
 

@@ -1,5 +1,7 @@
 -- OilGeyser.lua --
 dofile "$SURVIVAL_DATA/Scripts/game/survival_harvestable.lua"
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 OilGeyser = class( nil )
 
@@ -27,7 +29,7 @@ function OilGeyser.sv_n_harvest( self, params, player )
 	if not self.harvested and sm.exists( self.harvestable ) then
 		local container = player:getInventory()
 		if sm.container.beginTransaction() then
-			sm.container.collect( container, obj_resource_crudeoil, 20 )
+			sm.container.collect( container, obj_resource_crudeoil, Mod_EasySurvival.oilgeyser_loot_nb_items )
 			if sm.container.endTransaction() then
 				sm.effect.playEffect( 	"Oilgeyser - Picked", self.harvestable.worldPosition )
 				sm.harvestable.create( hvs_farmables_growing_oilgeyser, self.harvestable.worldPosition, self.harvestable.worldRotation )

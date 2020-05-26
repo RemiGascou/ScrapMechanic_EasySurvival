@@ -1,4 +1,6 @@
 dofile("$SURVIVAL_DATA/Scripts/game/survival_loot.lua")
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 SlimyClam = class()
 
@@ -15,11 +17,11 @@ function SlimyClam.sv_onHit( self )
 	if not self.harvested and sm.exists( self.harvestable ) then
 		local harvest = {
 			lootUid = obj_resources_slimyclam,
-			lootQuantity = 1
+			lootQuantity = Mod_EasySurvival.slimyclam_loot_nb_items
 		}
 		local pos = self.harvestable:getPosition() + sm.vec3.new( 0, 0, 0.5 )
 		sm.projectile.harvestableCustomProjectileAttack( harvest, "loot", 0, pos, sm.noise.gunSpread( sm.vec3.new( 0, 0, 1 ), 20 ) * 5, self.harvestable, 0 )
-	
+
 		sm.harvestable.create( hvs_farmables_slimyclam_broken, self.harvestable.worldPosition, self.harvestable.worldRotation )
 		sm.harvestable.destroy( self.harvestable )
 		self.harvested = true

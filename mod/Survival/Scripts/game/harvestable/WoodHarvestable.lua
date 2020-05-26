@@ -1,7 +1,8 @@
 -- WoodHarvestable.lua --
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
-
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 WoodHarvestable = class( nil )
 

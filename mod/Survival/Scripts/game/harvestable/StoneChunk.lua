@@ -1,6 +1,8 @@
 -- StoneChunk.lua --
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 StoneChunk = class( nil )
 StoneChunk.DamagerPerHit = 25
@@ -20,7 +22,7 @@ function StoneChunk.server_onRefresh( self )
 end
 
 function StoneChunk.sv_init( self )
-	self.health = 1
+	self.health = Mod_EasySurvival.chunk_stone_health
 end
 
 function StoneChunk.server_onMelee( self, position, attacker, damage )

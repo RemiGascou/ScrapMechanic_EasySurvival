@@ -1,5 +1,7 @@
 -- CottonPlant.lua --
 dofile "$SURVIVAL_DATA/Scripts/game/survival_harvestable.lua"
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 CottonPlant = class( nil )
 
@@ -13,7 +15,7 @@ function CottonPlant.server_onMelee( self, hitPos, attacker, damage )
 
 		local harvest = {
 			lootUid = obj_resource_cotton,
-			lootQuantity = 1
+			lootQuantity = Mod_EasySurvival.cottonplant_loot_nb_items
 		}
 		local pos = self.harvestable:getPosition() + sm.vec3.new( 0, 0, 0.5 )
 		sm.projectile.harvestableCustomProjectileAttack( harvest, "loot", 0, pos, sm.noise.gunSpread( sm.vec3.new( 0, 0, 1 ), 20 ) * 5, self.harvestable, 0 )

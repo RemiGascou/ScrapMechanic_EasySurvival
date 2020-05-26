@@ -1,18 +1,20 @@
 -- TreeTrunk.lua --
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 dofile "$SURVIVAL_DATA/Scripts/game/survival_constants.lua"
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 TreeTrunk = class( nil )
 
 SelfdestructTickTime = 40 * 22
-TrunkHealth = 100
+TrunkHealth = Mod_EasySurvival.raw_tree_health
 DamagerPerHit = math.ceil( TrunkHealth / TREE_TRUNK_HITS )
 
 -- Server
 
 function TreeTrunk.server_onCreate( self )
 	self:sv_init()
-	
+
 	if self.params then
 		if self.params.inheritedDamage then
 			self:sv_onHit( self.params.inheritedDamage )
@@ -21,20 +23,20 @@ function TreeTrunk.server_onCreate( self )
 			self.sv.fallen = false
 		end
 	end
-	
+
 	self.network:setClientData( { fallen = self.sv.fallen, pristine = ( self.sv.fallen == false ) } )
 end
 
 function TreeTrunk.sv_init( self )
-	
+
 	self.sv = {}
 	self.sv.health = TrunkHealth
-	
+
 	self.sv.fallen = true
-	
+
 	self.sv.effect = {}
 	self.sv.effect.startHealth = TrunkHealth
-	
+
 	if self.data then
 		if self.data.crown then
 			self.sv.crown = true
@@ -54,7 +56,7 @@ function TreeTrunk.server_onFixedUpdate( self, timeStep )
 		local currentPosition = self.shape.worldPosition
 		local currentVelocity = ( currentPosition - self.sv.previousPosition ) / timeStep
 		self.sv.previousPosition = currentPosition
-			
+
 		if self.sv.needNudge then
 			self.sv.hasNudged = true
 			local flatVelocity = currentVelocity
@@ -63,7 +65,7 @@ function TreeTrunk.server_onFixedUpdate( self, timeStep )
 				sm.physics.applyImpulse( self.shape, flatVelocity:normalize() * self.shape:getBody().mass * 0.05, true )
 			end
 		end
-		
+
 		if currentVelocity:length() < 2 then
 			if not self.sv.hasNudged then
 				self.sv.needNudge = true
@@ -72,14 +74,14 @@ function TreeTrunk.server_onFixedUpdate( self, timeStep )
 		else
 			self.sv.needNudge = false
 		end
-		
+
 		self.sv.selfdestructTicksLeft = self.sv.selfdestructTicksLeft - 1
 		if self.sv.selfdestructTicksLeft == 0 then
 			--self:sv_onHit( 100 )
 			self.sv.fallen = true
 			self.network:setClientData( { fallen = self.sv.fallen } )
 		end
-		
+
 		local crownDir = self.shape.worldRotation * sm.vec3.new( 0 , 1, 0 )
 		local fallenDeg = math.deg( math.acos( sm.vec3.new( 0, 0, 1 ):dot( crownDir ) ) )
 		if fallenDeg > 80 and self.sv.selfdestructTicksLeft > 20 then
@@ -141,14 +143,14 @@ function TreeTrunk.sv_onHit( self, damage )
 					end
 				end
 			end
-			
+
 			sm.shape.destroyPart(self.shape)
 		end
 	end
 end
 
-function TreeTrunk.server_onCollision( self, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal )	
-	
+function TreeTrunk.server_onCollision( self, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal )
+
 	if type( other ) == "Shape" and sm.exists( other ) then
 		if other.shapeUuid == obj_powertools_sawblade then
 			local angularVelocity = other.body.angularVelocity
@@ -158,7 +160,7 @@ function TreeTrunk.server_onCollision( self, other, collisionPosition, selfPoint
 			end
 		end
 	end
-	
+
 	if not self.sv.fallen then
 		if selfPointVelocity:length() > 5.0 or other == nil then
 			self.sv.fallen = true
@@ -169,11 +171,11 @@ function TreeTrunk.server_onCollision( self, other, collisionPosition, selfPoint
 end
 
 function TreeTrunk.sv_triggerCreak( self, position )
-	
+
 	if self.shape.body:isStatic() then
 		local lostHp = self.sv.effect.startHealth - self.sv.health
 		local creakLevel = 1 + math.modf( lostHp / DamagerPerHit )
-	
+
 		sm.effect.playEffect( "Tree - Creak", position, nil, nil, nil, { tree_creaking = creakLevel } )
 	end
 end
@@ -184,11 +186,11 @@ function TreeTrunk.client_onCreate( self )
 	self:cl_init()
 end
 
-function TreeTrunk.cl_init( self ) 
+function TreeTrunk.cl_init( self )
 	self.cl = {}
 	self.cl.pristine = false
 	self.cl.crown = false
-	
+
 	if self.data then
 		if self.data.hideSubmeshes then
 			self.interactable:setSubMeshVisible( "submesh0_bark", true )
@@ -210,12 +212,12 @@ function TreeTrunk.client_onFixedUpdate( self, dt )
 		local currentPosition = self.shape.worldPosition
 		local currentVelocity = ( currentPosition - self.cl.previousClientPosition ) / dt
 		local velocityLength = currentVelocity:length()
-		
+
 		self.cl.previousClientPosition = currentPosition
-		
+
 		if self.cl.fallEffect then
 			self.cl.fallEffect:setParameter( "velocity_tree", velocityLength )
-		
+
 			if velocityLength > 0 then
 				if not self.cl.fallEffect:isPlaying() then
 					self.cl.fallEffect:start()
@@ -226,11 +228,11 @@ function TreeTrunk.client_onFixedUpdate( self, dt )
 end
 
 function TreeTrunk.client_onClientDataUpdate( self, clientData )
-	
+
 	if clientData.pristine then
 		self.cl.pristine = true
 	end
-	
+
 	if clientData.fallen then
 		if self.data then
 			if self.data.fallenEffects then
@@ -243,7 +245,7 @@ function TreeTrunk.client_onClientDataUpdate( self, clientData )
 					self.cl.pristine = false
 				end
 			end
-				
+
 			if self.data.hideSubmeshes then
 				if clientData.fallen then
 					self.interactable:setSubMeshVisible( "submesh0_bark", false )

@@ -1,8 +1,10 @@
 -- TreeLog.lua --
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 TreeLog = class( nil )
-TreeLog.LogHealth = 1
+TreeLog.LogHealth = Mod_EasySurvival.chunk_tree_health
 TreeLog.DamagerPerHit = math.ceil( TreeLog.LogHealth / TREE_LOG_HITS )
 
 function TreeLog.server_onCreate( self )

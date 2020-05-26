@@ -2,9 +2,11 @@
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 dofile("$SURVIVAL_DATA/Scripts/util.lua")
+-- Load Mod_EasySurvival
+dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
 
 StoneHarvestable = class( nil )
-StoneHarvestable.ChunkHealth = 1
+StoneHarvestable.ChunkHealth = Mod_EasySurvival.raw_stone_health
 StoneHarvestable.DamagerPerHit = 25
 
 function StoneHarvestable.server_onCreate( self )
