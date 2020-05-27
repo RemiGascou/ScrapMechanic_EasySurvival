@@ -2,7 +2,8 @@
 
 ![](./docs/imgs/mod_banner.png)
 
-**Current version :** 0.2.2 [Download](https://github.com/RemiGascou/ScrapMechanic_EasySurvival/releases/download/0.2.2/EasySurvival_v0.2.2.zip)
+**Current Mod version :** 0.2.2 [Download](https://github.com/RemiGascou/ScrapMechanic_EasySurvival/releases/download/0.2.2/EasySurvival_v0.2.2.zip)
+**Compatible with :** ScrapMechanic 0.4.4 build 565 (latest version)
 
 The purpose of this mod is to make the Survival mode of ScrapMechanic a bit easier and faster.
 
