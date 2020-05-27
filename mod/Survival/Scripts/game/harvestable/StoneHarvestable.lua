@@ -3,7 +3,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 dofile("$SURVIVAL_DATA/Scripts/util.lua")
 -- Load Mod_EasySurvival
-dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+dofile "$GAME_DATA/Mods/Mod_EasySurvival/mod_easysurvival.lua"
 
 StoneHarvestable = class( nil )
 StoneHarvestable.ChunkHealth = Mod_EasySurvival.raw_stone_health

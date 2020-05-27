@@ -1,6 +1,6 @@
 dofile("$SURVIVAL_DATA/Scripts/game/survival_loot.lua")
 -- Load Mod_EasySurvival
-dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+dofile "$GAME_DATA/Mods/Mod_EasySurvival/mod_easysurvival.lua"
 
 SlimyClam = class()
 

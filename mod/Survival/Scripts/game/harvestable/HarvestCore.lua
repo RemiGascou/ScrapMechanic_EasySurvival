@@ -1,7 +1,7 @@
 -- HarvestCore.lua --
 
 -- Load Mod_EasySurvival
-dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+dofile "$GAME_DATA/Mods/Mod_EasySurvival/mod_easysurvival.lua"
 
 HarvestCore = class( nil )
 HarvestCore.resetStateOnInteract = false

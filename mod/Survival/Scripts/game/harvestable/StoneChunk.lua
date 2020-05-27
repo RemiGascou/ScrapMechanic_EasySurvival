@@ -2,7 +2,7 @@
 dofile("$SURVIVAL_DATA/Scripts/game/survival_shapes.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 -- Load Mod_EasySurvival
-dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+dofile "$GAME_DATA/Mods/Mod_EasySurvival/mod_easysurvival.lua"
 
 StoneChunk = class( nil )
 StoneChunk.DamagerPerHit = 25

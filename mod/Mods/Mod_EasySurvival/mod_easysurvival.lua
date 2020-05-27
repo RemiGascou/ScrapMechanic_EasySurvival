@@ -4,10 +4,11 @@
 -- The purpose of this mod is to make the Survival mode of
 -- ScrapMechanic a bit easier and faster.
 --
--- Version : v0.2.2
+-- Version : v0.2.3
 --
 
 Mod_EasySurvival = class()
+Mod_EasySurvival.version = "v0.2.3"
 
 -- [ Tools ] ===================================================================
 
@@ -37,4 +38,8 @@ Mod_EasySurvival.cottonplant_loot_nb_items   = 10
 Mod_EasySurvival.oilgeyser_loot_nb_items     = 20
 Mod_EasySurvival.slimyclam_loot_nb_items     = 10
 Mod_EasySurvival.pigmentflower_loot_nb_items = 10
+
+-- [ Plants ] ============================================================
+
+
 --

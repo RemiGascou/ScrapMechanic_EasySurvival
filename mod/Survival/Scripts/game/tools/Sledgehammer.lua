@@ -2,7 +2,7 @@
 dofile "$GAME_DATA/Scripts/game/AnimationUtil.lua"
 dofile "$SURVIVAL_DATA/Scripts/util.lua"
 -- Load Mod_EasySurvival
-dofile "$SURVIVAL_DATA/Scripts/mod_easysurvival.lua"
+dofile "$GAME_DATA/Mods/Mod_EasySurvival/mod_easysurvival.lua"
 
 local Damage = Mod_EasySurvival.sledgehammer_dammage
 
