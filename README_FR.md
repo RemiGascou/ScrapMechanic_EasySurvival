@@ -12,13 +12,13 @@ Ce Mod permet de rendre le mode Survival de ScrapMechanic plus simple et plus ra
 
 ## Features
 
- - **SledgeHammer God mode** : Le SledgeHammer est capable de détruire les grands arbres et les pierres
+ - **SledgeHammer God mode** : Le SledgeHammer est capable de détruire les grands arbres et les pierres.
 
- - **Raffinage de matériaux** : Le raffinage de matériaux donne 10 blocks dans le jeu original, le mod change cette valeur pour donner 256 blocks (un stack complet)
+ - **Raffinage de matériaux** : Le raffinage de matériaux donne 10 blocks dans le jeu original, le mod change cette valeur pour donner 256 blocks (un stack complet).
 
 ### Les loot
 
-Les items suivant donnent plus de loot que dans le jeu original :
+Les items suivants donnent plus de loot que dans le jeu original :
 
 | Harvestable              | Valeur originale | EasySurvival Mod  |
 |--------------------------|------------------|-------------------|
@@ -29,15 +29,15 @@ Les items suivant donnent plus de loot que dans le jeu original :
 | Coquillage Gluant        | 1                | 10                |
 
 
-Toutes ces valeurs sont facilement modifiables dans le fichier du mod situé dans `C:\Program Files (x86)\Steam\steamapps\common\Scrap Mechanic\Mods\Mod_EasySurvival\mod_easysurvival.lua`
+Toutes ces valeurs sont facilement modifiables dans le fichier du mod EasySurvival situé dans `C:\Program Files (x86)\Steam\steamapps\common\Scrap Mechanic\Mods\Mod_EasySurvival\mod_easysurvival.lua`
 
 ## Installation du Mod
 
-Pour installer le Mod, il suffit de décompresser le fichier zip du mod dans le dossier de Jeu de ScrapMechanic et cliquer sur `Remplacer les fichiers`. Le dossier de jeu se situe généralement dans : `C:\Program Files (x86)\Steam\steamapps\common\Scrap Mechanic\`
+Pour installer le mod EasySurvival, il suffit de décompresser le fichier zip du mod dans le dossier de Jeu de ScrapMechanic et cliquer sur `Remplacer les fichiers`. Le dossier de jeu se situe généralement dans : `C:\Program Files (x86)\Steam\steamapps\common\Scrap Mechanic\`
 
 ## Désinstallation du Mod
 
-Pour désinstaller le mod, allez dans Steam, puis **click droit** sur ScrapMechanic et **Propriétés** :
+Pour désinstaller le mod EasySurvival, allez dans Steam, puis **click droit** sur ScrapMechanic et **Propriétés** :
 
 ![](./docs/imgs/steam_scrapmechanic_properties.png)
 
