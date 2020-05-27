@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" name="CreateGamePanel" position_real="0.0411458 0.185185 0.916667 0.740741">
+        <Widget type="Widget" skin="BackgroundDarkRoundedUpperRight" position_real="0 0 1 0.19125">
+            <Widget type="TextBox" skin="TextBox" position_real="0.0579545 0 0.198864 0.673203">
+                <Property key="Caption" value="O P T I O N S" />
+                <Property key="FontName" value="InventoryTitle" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.0284091 0.228758 0.0181818 0.20915">
+                <Property key="ImageTexture" value="gui_mainmenu_icon_options.png" />
+                <Property key="Colour" value="1 0.780392 0.227451" />
+            </Widget>
+            <Widget type="Button" skin="InventoryTab" name="Controls" position_real="0.0284091 0.712418 0.1 0.287582">
+                <Property key="Caption" value="CONTROLS" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="InventoryTab" name="Audio" position_real="0.128977 0.712418 0.0954545 0.287582">
+                <Property key="Caption" value="AUDIO" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="InventoryTab" name="Display" position_real="0.225 0.712418 0.0954545 0.287582">
+                <Property key="Caption" value="DISPLAY" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="InventoryTab" name="Graphics" position_real="0.321023 0.712418 0.0954545 0.287582">
+                <Property key="Caption" value="GRAPHICS" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="InventoryTab" name="ModEasySurvival" position_real="0.4164775 0.712418 0.15 0.287582">
+                <Property key="Caption" value="MOD EASYSURVIVAL" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="Apply" position_real="0.803977 0.27451 0.0852273 0.261438">
+                <Property key="Caption" value="APPLY" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="Enabled" value="false" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="Default" position_real="0.894886 0.27451 0.0852273 0.261438">
+                <Property key="Caption" value="DEFAULT" />
+                <Property key="FontName" value="InventoryTabLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="BackgroundLightRoundedLowerLeft" name="OptionsHostPanel" position_real="0 0.19125 1 0.80875" />
+    </Widget>
+    <Widget type="Button" skin="MenuButton" name="Back" position_real="0.0380208 0.0694444 0.107292 0.0574074">
+        <Property key="FontName" value="InventorySearchText" />
+        <Property key="TextAlign" value="Center" />
+        <Widget type="ImageBox" skin="ImageBox" position_real="0.0776699 0.258065 0.145631 0.483871">
+            <Property key="ImageTexture" value="gui_icon_back.png" />
+            <Property key="NeedMouse" value="false" />
+            <Property key="NeedKey" value="false" />
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position_real="0.271845 0.258065 0.339806 0.483871">
+            <Property key="Caption" value="BACK" />
+            <Property key="FontName" value="MenuButtonCaption" />
+            <Property key="NeedKey" value="false" />
+            <Property key="NeedMouse" value="false" />
+        </Widget>
+        <Widget type="Button" skin="EscButton" position_real="0.631068 0.258065 0.242718 0.483871">
+            <Property key="NeedMouse" value="false" />
+            <Property key="NeedKey" value="false" />
+        </Widget>
+    </Widget>
+</MyGUI>

@@ -10,6 +10,10 @@
 Mod_EasySurvival = class()
 Mod_EasySurvival.version = "v0.2.3"
 
+-- [ General ] =================================================================
+
+Mod_EasySurvival.daycycle_time = 24 * 60 -- seconds (24 minutes)
+
 -- [ Tools ] ===================================================================
 
 Mod_EasySurvival.sledgehammer_dammage = 500

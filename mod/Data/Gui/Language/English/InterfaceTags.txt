@@ -1,0 +1,643 @@
+﻿LANGUAGE_CODE en-US
+
+MENU_MAIN_LOAD_GAME LOAD GAME
+MENU_MAIN_NEW_GAME NEW GAME
+MENU_MAIN_CREATE_TERRAIN CREATE TERRAIN
+MENU_MAIN_CHARACTER CHARACTER
+MENU_MAIN_OPTIONS OPTIONS
+MENU_MAIN_EXIT_GAME EXIT GAME
+MENU_MAIN_VERSION Scrap Mechanic BETA Ver 
+MENU_MAIN_COPYRIGHT © 2020 Axolot Games. All rights reserved 
+
+MENU_INGAME_EXIT EXIT
+MENU_INGAME_OPTIONS OPTIONS
+MENU_INGAME_INVITE_FRIEND INVITE FRIEND
+MENU_INGAME_RESUME RESUME
+MENU_INGAME_RESTART RESTART
+MENU_INGAME_RESET RESET
+MENU_INGAME_SAVE SAVE
+MENU_INGAME_SAVE_AND_TEST SAVE AND TEST
+MENU_INGAME_STOP_TEST STOP TEST
+
+MENU_LOAD_SAVED_GAMES SAVED GAMES
+MENU_LOAD_LOAD LOAD
+MENU_LOAD_DELETE DELETE
+MENU_LOAD_WORLD_INFO WORLD INFO
+MENU_LOAD_MODS MODS
+
+MENU_NEW_WORLD_NAME GAME NAME
+MENU_NEW_TERRAIN TERRAIN
+MENU_NEW_FLAT FLAT
+MENU_NEW_PRIVATE PRIVATE
+MENU_NEW_SETTINGS SETTINGS
+MENU_NEW_CREATE CREATE
+MENU_NEW_MODE_CREATIVE CREATIVE
+MENU_NEW_MODE_SURVIVAL SURVIVAL
+MENU_NEW_MODE_CHALLENGE CHALLENGE
+MENU_NEW_SELECT_MODS SELECT MODS
+
+MENU_MODS_SELECT_ALL SELECT ALL
+MENU_MODS_DESELECT_ALL DESELECT ALL
+
+MENU_CREATE_TERRAIN_WORLD_BUILDER WORLD BUILDER
+MENU_CREATE_TERRAIN_TILE_BUILDER TILE BUILDER
+
+ERRMSG_TITLE_ERROR Error
+ERRMSG_TITLE_WARNING Warning
+ERRMSG_TITLE_CONNECTION_LOST Connection lost
+ERRMSG_TITLE_CONNECTION_FAILED Connection failed
+ERRMSG_TITLE_DISCONNECTED_FROM_SERVER Disconnected from host
+ERRMSG_TITLE_FAILED_TO_LOAD_WORLD Failed to load world
+  
+ERRMSG_VERSION_MISMATCH_LINE1 Version mismatch 
+ERRMSG_VERSION_MISMATCH_LINE2 Please update your client and try again
+
+ERRMSG_CONNECTION_TIMEOUT_LINE1 Connection to host timed out
+ERRMSG_CONNECTION_TIMEOUT_LINE2 Please check your Internet connection and try again
+
+ERRMSG_KICKED_FROM_SERVER_LINE1 You have been kicked 
+ERRMSG_KICKED_FROM_SERVER_LINE2 from the host
+
+ERRMSG_SERVER_SHUTDOWN_LINE1 Host has shut down
+ERRMSG_SERVER_SHUTDOWN_LINE2 
+
+ERRMSG_CONNECTION_LOST_LINE1 Connection lost
+ERRMSG_CONNECTION_LOST_LINE2 Please check your Internet connection
+
+ERRMSG_UNLOAD_MOD_LINE1 A previously used mod has been removed!
+ERRMSG_UNLOAD_MOD_LINE2 This might cause the world to be unloadable.
+ERRMSG_UNLOAD_MOD_LINE3 Do you want to do this?
+
+ERRMSG_INVALID_SHAPE_ID The world contains an unsupported part
+
+ERRMSG_REQUIRED_MOD Required mod
+
+MENU_SETTINGS_SETTINGS CUSTOM SETTINGS
+MENU_SETTINGS_PLAYERS Players
+MENU_SETTINGS_BEARINGS Bearings
+MENU_SETTINGS_THRUSTERS Thrusters
+MENU_SETTINGS_BEARINGS_PER_OBJECT Bearings Per Object
+MENU_SETTINGS_GAS_ENGINES Gas Engines
+MENU_SETTINGS_ELECTRIC_ENGINES Electric Engines
+MENU_SETTINGS_CONTROLLERS Controllers
+MENU_SETTINGS_DRIVERS_SEATS Drivers Seats
+MENU_SETTINGS_SUSPENSIONS Suspensions
+
+MENU_YN_MESSAGE_CONFIRM Are you sure?
+MENU_YN_MESSAGE_CONFIRM_DELETE Are you sure?
+MENU_YN_MESSAGE_ADD_CHALLENGE Are you sure?
+
+MENU_YN_TITLE_DELETE_GAME A R E  Y O U S U R E ?
+MENU_YN_MESSAGE_DELETE_GAME The game will be deleted permanently and can't be restored.
+
+MENU_YN_MESSAGE_RESTORE_CONTROLS Restore all control settings to default values?
+MENU_YN_MESSAGE_RESTORE_AUDIO Restore all audio settings to default values?
+MENU_YN_MESSAGE_RESTORE_DISPLAY Restore all display settings to default values?
+MENU_YN_MESSAGE_RESTORE_GRAPHICS Restore all graphics settings to default values?
+MENU_YN_MESSAGE_ACCEPT_DISPLAY Accept these settings?
+MENU_YN_MESSAGE_DELETE_BLUEPRINT Delete this blueprint?
+MENU_YN_MESSAGE_OVERWRITE_BLUEPRINT A creation with this name already exists, overwrite it?
+MENU_YN_MESSAGE_DELETE_FROM_LIFT Delete this creation from the lift?
+MENU_YN_YES YES
+MENU_YN_NO NO
+MENU_YN_CANCEL CANCEL
+MENU_YN_OK OK
+
+MENU_YN_TITLE_MODS_MISSING_WARNING Missing mods
+MENU_YN_MESSAGE_MODS_MISSING_WARNING The save file uses mods that could not be found.
+
+MENU_OPTION_OFF Off
+MENU_OPTION_ON On
+MENU_OPTION_LOW Low
+MENU_OPTION_MEDIUM Medium
+MENU_OPTION_HIGH High
+MENU_OPTION_VERY_HIGH Very High
+MENU_OPTION_DISTANCE_SHORT Short
+MENU_OPTION_DISTANCE_MEDIUM Medium
+MENU_OPTION_DISTANCE_FAR Far
+MENU_OPTION_DEFAULT DEFAULT
+MENU_OPTION_APPLY APPLY
+
+MENU_OPTIONS_CONTROLS CONTROLS
+MENU_OPTIONS_CONTROLS_INVERTED_Y_AXIS Inverted Y Axis
+MENU_OPTIONS_CONTROLS_AIM_SENSITIVITY Aim Sensitivity
+MENU_OPTIONS_CONTROLS_MOVE_FORWARD Move Forward
+MENU_OPTIONS_CONTROLS_MOVE_BACKWARD Move Backward
+MENU_OPTIONS_CONTROLS_STRAFE_LEFT Strafe Left
+MENU_OPTIONS_CONTROLS_STRAFE_RIGHT Strafe Right
+MENU_OPTIONS_CONTROLS_JUMP Jump
+MENU_OPTIONS_CONTROLS_CRAWL Crawl
+MENU_OPTIONS_CONTROLS_SPRINT Sprint
+MENU_OPTIONS_CONTROLS_USE Use
+MENU_OPTIONS_CONTROLS_INVENTORY Inventory
+MENU_OPTIONS_CONTROLS_ATTACK Attack
+MENU_OPTIONS_CONTROLS_CREATE Create
+MENU_OPTIONS_CONTROLS_ROTATION_NEXT Next Rotation
+MENU_OPTIONS_CONTROLS_ROTATION_PREVIOUS Previous Rotation
+MENU_OPTIONS_CONTROLS_LIFT_UP Lift Up
+MENU_OPTIONS_CONTROLS_LIFT_DOWN Lift Down
+MENU_OPTIONS_CONTROLS_HOTBAR_NEXT Next Hotbar Item
+MENU_OPTIONS_CONTROLS_HOTBAR_PREVIOUS Previous Hotbar Item
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_1 Hotbar Item 1
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_2 Hotbar Item 2
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_3 Hotbar Item 3
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_4 Hotbar Item 4
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_5 Hotbar Item 5
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_6 Hotbar Item 6
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_7 Hotbar Item 7
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_8 Hotbar Item 8
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_9 Hotbar Item 9
+MENU_OPTIONS_CONTROLS_HOTBAR_ITEM_10 Hotbar Item 10
+MENU_OPTIONS_CONTROLS_HOTBAR_NEXT_PAGE Next Hotbar
+MENU_OPTIONS_CONTROLS_HOTBAR_PREVIOUS_PAGE Previous Hotbar
+MENU_OPTIONS_CONTROLS_HOTBAR_SELECT_1 Select Hotbar 1
+MENU_OPTIONS_CONTROLS_HOTBAR_SELECT_2 Select Hotbar 2
+MENU_OPTIONS_CONTROLS_HOTBAR_SELECT_3 Select Hotbar 3
+MENU_OPTIONS_CONTROLS_RESET Reset
+MENU_OPTIONS_CONTROLS_ZOOM_IN Zoom In
+MENU_OPTIONS_CONTROLS_ZOOM_OUT Zoom Out
+MENU_OPTIONS_CONTROLS_CHAT Chat
+MENU_OPTIONS_CONTROLS_HANDBOOK Handbook
+MENU_OPTIONS_CONTROLS_LOGBOOK Logbook
+MENU_OPTIONS_CONTROLS_CANCEL Cancel
+MENU_OPTIONS_CONTROLS_TINKER Upgrade
+MENU_OPTIONS_CONTROLS_FORCE_BUILD Force Build
+
+MENU_OPTIONS_CONTROLS_BINDING_SCROLL_UP Scroll Up
+MENU_OPTIONS_CONTROLS_BINDING_SCROLL_DOWN Scroll Down
+MENU_OPTOINS_CONTROLS_BINDING_MOUSE_BUTTON MB
+MENU_OPTIONS_CONTROLS_BINDING_MOUSE_BUTTON_LEFT LMB
+MENU_OPTIONS_CONTROLS_BINDING_MOUSE_BUTTON_RIGHT RMB
+MENU_OPTIONS_CONTROLS_BINDING_NOT_SET Not Set
+
+MENU_OPTIONS_AUDIO AUDIO
+MENU_OPTIONS_AUDIO_MASTER Master Volume
+MENU_OPTIONS_AUDIO_AMBIENT Ambient
+MENU_OPTIONS_AUDIO_MUSIC Music
+MENU_OPTIONS_AUDIO_EFFECT Effect
+MENU_OPTIONS_AUDIO_GUI GUI
+
+MENU_OPTIONS_GRAPHICS GRAPHICS
+MENU_OPTIONS_GRAPHICS_SHADER_QUALITY Shader Quality
+MENU_OPTIONS_GRAPHICS_REFLECTION_QUALITY Reflection Quality
+MENU_OPTIONS_GRAPHICS_SHADOW_RESOLUTION Shadow Resolution
+MENU_OPTIONS_GRAPHICS_SHADOW_QUALITY Shadow Quality
+MENU_OPTIONS_GRAPHICS_SSAO SSAO
+MENU_OPTIONS_GRAPHICS_FXAA Anti-Aliasing
+MENU_OPTIONS_GRAPHICS_DOF Depth of Field
+MENU_OPTIONS_GRAPHICS_BLOOM Bloom Effect
+MENU_OPTIONS_GRAPHICS_GODRAYS Godrays
+MENU_OPTIONS_GRAPHICS_CAMERA_SHAKE Camera Shake
+MENU_OPTIONS_GRAPHICS_FOLIAGE Foliage Density
+MENU_OPTIONS_GRAPHICS_CREATIVE_ONLY Creative only
+MENU_OPTIONS_GRAPHICS_PARTICLE_QUALITY Particle Quality
+MENU_OPTIONS_GRAPHICS_TEXTURE_QUALITY Texture Quality
+MENU_OPTIONS_GRAPHICS_TEXTURE_FILTERING Texture Filtering
+MENU_OPTIONS_GRAPHICS_MODELS Models
+MENU_OPTIONS_GRAPHICS_DRAW_DISTANCE Draw Distance
+MENU_OPTIONS_GRAPHICS_DYNAMIC_LIGHTS Dynamic Lights
+
+MENU_OPTION_BILINEAR Bilinear
+MENU_OPTION_TRILINEAR Trilinear
+MENU_OPTION_ANISOTROPIC_2X Anisotropic 2x
+MENU_OPTION_ANISOTROPIC_4X Anisotropic 4x
+MENU_OPTION_ANISOTROPIC_8X Anisotropic 8x
+MENU_OPTION_ANISOTROPIC_16X Anisotropic 16x
+
+MENU_OPTIONS_DISPLAY DISPLAY
+MENU_OPTIONS_DISPLAY_FOV FOV
+MENU_OPTIONS_DISPLAY_DISPLAY_MODE Display Mode
+MENU_OPTIONS_DISPLAY_DISPLAY_MODE_FULLSCREEN Fullscreen
+MENU_OPTIONS_DISPLAY_DISPLAY_MODE_WINDOWED Windowed
+MENU_OPTIONS_DISPLAY_DISPLAY_MODE_BORDERLESS_WINDOW Borderless window
+MENU_OPTIONS_DISPLAY_VEHICLE_CAMERA_MODE Vehicle Camera Mode
+MENU_OPTIONS_DISPLAY_VEHICLE_CAMERA_MODE_FREE Free Camera
+MENU_OPTIONS_DISPLAY_VEHICLE_CAMERA_MODE_FOLLOW Follow Camera
+MENU_OPTIONS_DISPLAY_VEHICLE_CAMERA_MODE_STRICT_FOLLOW Strict Follow Camera
+MENU_OPTIONS_DISPLAY_RESOLUTION Resolution
+MENU_OPTIONS_DISPLAY_VERTICAL_SYNCHRONIZATION Vertical Sync
+MENU_OPTIONS_DISPLAY_LANGUAGE Language
+
+WORLD_BUILDER_TITLE WORLD BUILDER
+WORLD_BUILDER_WORLD_NAME WORLD NAME
+WORLD_BUILDER_SAVE_WORLD SAVE WORLD
+WORLD_BUILDER_SAVE_WORLD_SUCCESS World successfully saved
+WORLD_BUILDER_LOAD_WORLD LOAD
+WORLD_BUILDER_MAIN_MENU MAIN MENU
+WORLD_BUILDER_CLEAR_WORLD CLEAR WORLD
+WORLD_BUILDER_DELETE_WORLD DELETE
+WORLD_BUILDER_SELECT_WORLD SELECT WORLD
+WORLD_BUILDER_FREE_PLACEMENT Free Placement
+WORLD_BUILDER_ALL ALL
+WORLD_BUILDER_REMOVE_ALL_TILES This will remove all tiles from the current world!
+WORLD_BUILDER_CONTINUE Do you want to continue?
+WORLD_BUILDER_INVALID_NAME Invalid file name!
+WORLD_BUILDER_NAME_ALREADY_EXISTS A world with that name already exists
+WORLD_BUILDER_OVERWRITE Do you want to overwrite it?
+WORLD_BUILDER_DELETE_WORLD_CONFIRM Are you sure you want to delete this world?
+
+WARNING_TUNNELING_TITLE Hey!
+WARNING_TUNNELING_LINE1 You're playing the game wrong!
+WARNING_TUNNELING_LINE2 Stop that!
+WARNING_TUNNELING_BUTTON OK
+
+INTERACTION_PRESS Press
+INTERACTION_USE Use
+INTERACTION_REFINE Refine
+INTERACTION_PICK_UP Pick up
+INTERACTION_PUT_DOWN Put down
+INTERACTION_PLACE Place
+INTERACTION_PLACE_LIFT Place lift
+INTERACTION_PLACE_LIFT_ON_GROUND Place creation on lift
+INTERACTION_PLACE_CREATION_ON_LIFT Lift creation
+INTERACTION_CHANGE_ROTATIONAL_DIRECTION Change rotation
+INTERACTION_TO_USE to use
+INTERACTION_AND and
+INTERACTION_TO_ELEVATE_LIFT_UP_AND_DOWN to elevate the lift up and down
+INTERACTION_TINKER Upgrade
+INTERACTION_UP Up
+INTERACTION_DOWN Down
+INTERACTION_USE_DRESSBOT Use Dressbot
+INTERACTION_USE_WARDROBE Use Wardrobe
+INTERACTION_EAT Eat
+INTERACTION_FEED Feed
+INTERACTION_REVIVE Revive
+INTERACTION_RESPAWN Respawn
+INTERACTION_FILL Fill
+INTERACTION_THROW Throw
+INTERACTION_INSERT Insert
+INTERACTION_FERTILIZE Fertilize
+INTERACTION_PLANT Plant
+INTERACTION_PUT_SOIL Put soil
+INTERACTION_FORCE_BUILD Force build
+
+INFO_REQUIRES Requires
+INFO_REQUIRES_POWER Requires power
+INFO_TOO_STEEP Too steep
+INFO_OUT_OF_FUEL Out of fuel
+INFO_OUT_OF_ENERGY Out of energy
+INFO_BUSY Object is busy
+INFO_INVENTORY_FULL Inventory full
+INFO_HOME_STORED Respawn point saved
+INFO_HOME_NOT_STORED It's too dangerous to sleep here
+INFO_HOME_CRASH_SITE New respawn point: Crashed ship
+INFO_HOME_MECHANIC_STATION New respawn point: Mechanic Station
+
+ALERT_DRIVERS_SEAT_ON_LIFT Make sure you remove the lift before using the Driver’s seat
+ALERT_DRIVERS_SEAT_OCCUPIED This Seat is occupied
+ALERT_ENGINE_NOT_CONNECTED This Engine is not connected to anything
+ALERT_ENGINE_MAX_BEARINGS This Engine is already connected to the max number of bearings
+ALERT_CONTROLLER_MAX_BEARINGS This Controller is already connected to ten bearings
+ALERT_SWITCH_NOT_CONNECTED This Switch is not connected to anything
+ALERT_SWITCH_ON_LIFT This Switch is on the lift
+ALERT_BUTTON_NOT_CONNECTED This Button is not connected to anything
+ALERT_BUTTON_ON_LIFT This Button is on the lift
+ALERT_MAX_BEARINGS_SEAT This Seat is already connected to the max number of Bearings
+ALERT_MAX_BEARINGS_ON_OBJECT The settings doesn't allow more bearings on the same object
+ALERT_MAX_BEARINGS_IN_WORLD The settings doesn't allow more bearings in the world
+ALERT_MAX_SUSPENSIONS_IN_WORLD The settings doesn't allow more suspensions in the world
+ALERT_MAX_DRIVERS_SEATS_IN_WORLD The settings doesn't allow more driver's seats in the world
+ALERT_MAX_GAS_ENGINES_IN_WORLD The settings doesn't allow more gas engines in the world
+ALERT_MAX_ELECTRIC_ENGINES_IN_WORLD The settings doesn't allow more electric engines in the world
+ALERT_MAX_THRUSTERS_IN_WORLD The settings doesn't allow more thrusters in the world
+ALERT_MAX_CONTROLLERS_IN_WORLD The settings doesn't allow more controllers in the world
+ALERT_NOT_THE_CREATOR_OF_BLUEPRINT YOU'RE NOT THE CREATOR OF THIS CONTRAPTION
+ALERT_FAILED_TO_PARSE_JSON Failed to parse JSON
+ALERT_INVALID_JSON Invalid JSON
+ALERT_NON_EXISTING_SHAPE Non existing shape
+ALERT_EMPTY_RIGID_BODY Empty rigidbody
+ALERT_INVALID_JOINT_POSITIONS Invalid joint positions
+ALERT_JOINT_CONNECTION_ERROR Joint connection error
+ALERT_CONTROLLER_CONNECTION_ERROR Controller connection error
+ALERT_FAILED_TO_BUILD_SHAPE Failed to build shape
+ALERT_MAX_CONNECTIONS Max connections reached
+ALERT_MAX_CONNECTIONS_SWITCH This Switch already has the max number of connections
+ALERT_MAX_CONNECTIONS_BUTTON This Button already has the max number of connections
+ALERT_MAX_CONNECTIONS_LOGIC_GATE This Logic Gate already has the max number of connections
+ALERT_MAX_CONNECTIONS_SEAT This Seat already has the max number of connections
+ALERT_MAX_CONNECTIONS_SENSOR This Sensor already has the max number of connections
+ALERT_MAX_CONNECTIONS_TIMER This Timer already has the max number of connections
+ALERT_RADIO_CONNECTED_TO_BUTTON This Radio is connected to a Button
+ALERT_RADIO_CONNECTED_TO_SWITCH This Radio is connected to a Switch
+ALERT_RADIO_CONNECTED_TO_SENSOR This Radio is connected to a Sensor
+ALERT_UNABLE_TO_COLLECT_ALL Unable to collect all parts
+ALERT_INSUFFICIENT_MATERIALS Insufficient parts
+
+ALERT_HUNGER Hungry
+ALERT_THIRST Thirsty
+
+ALERT_STONE_TOO_BIG This stone is too big for the sledgehammer
+ALERT_TREE_TOO_BIG This tree is too big for the sledgehammer
+
+DAMAGE_BREATH Drowning
+DAMAGE_HUNGER Starving
+DAMAGE_THIRST Dehydrated
+
+WELCOME_MESSAGE_GREETING Hi Mechanic!
+WELCOME_MESSAGE_MODE Welcome to Scrap Mechanic: Creative Mode!
+WELCOME_MESSAGE_PARAGRAPH1 This is a great place to express your creativity and build the most amazing creations. Engineer? Architect? Both? Everything you need is already conveniently stacked in your inventory ( I ).
+WELCOME_MESSAGE_PARAGRAPH2 A great way to start is by opening the “Mechanics’ Handbook”, which you’ll find in your hotbar and following the instructions for “How to Build a Vehicle”. It’ll help you get comfortable with the basic building system, and will give you a great foundation on which to build your Scrap Mechanic skills.
+WELCOME_MESSAGE_BUTTON Got it!
+
+CHAT_WELCOME_MESSAGE_LINE1 Welcome Mechanic!
+CHAT_WELCOME_MESSAGE_LINE2 Scrap Mechanic is still in the progress of being made and will change a lot in the coming updates.
+CHAT_PLAYER_JOINED has joined the game
+CHAT_PLAYER_LEFT has left the game
+CHAT_PLAYER_DISCONNECTED was disconnected
+CHAT_PLAYER_RECONNECTED reconnected
+CHAT_PLAYER_KICKED was kicked
+
+INVENTORY_BACKPACK BACKPACK
+INVENTORY_TOOLS TOOLS
+INVENTORY_DESCRIPTION DESCRIPTION
+INVENTORY_SEARCH Search
+INVENTORY_WEIGHT_LIGHT Light Weight
+INVENTORY_WEIGHT_MEDIUM Medium Weight
+INVENTORY_WEIGHT_HEAVY Heavy Weight
+INVENTORY_CONFIRM_DESTROY_ITEM Destroy this item?
+
+STEAM_WORKSHOP STEAM WORKSHOP
+STEAM_WORKSHOP_DESCRIPTION DESCRIPTION
+STEAM_WORKSHOP_PARTS PARTS
+STEAM_WORKSHOP_DELETE DELETE
+STEAM_WORKSHOP_NO_DESCRIPTION This blueprint doesn't have a description
+
+STEAM_WORKSHOP_DOWNLOADING DOWNLOADING
+STEAM_WORKSHOP_FAILED_DOWNLOAD Failed to download workshop item
+STEAM_WORKSHOP_FAILED_CREATE_ITEM Create workshop item failed
+STEAM_WORKSHOP_FAILED_FIND_FOLDER Unable to find folder for
+STEAM_WORKSHOP_FAILED_REASON Reason
+STEAM_WORKSHOP_FAILED_REASON_DISK_FULL Disk full
+STEAM_WORKSHOP_FAILED_REASON_DATA_CORRUPTION Data corruption
+STEAM_WORKSHOP_FAILED_REASON_ACCESS_DENIED Access denied
+STEAM_WORKSHOP_FAILED_REASON_ERROR_CODE Error code
+
+STEAM_WORKSHOP_ACTION_VERIFY_INTEGRITY Please verify integrity of game files
+
+STEAM_WORKSHOP_IMPORT_TITLE LOAD BLUEPRINT
+STEAM_WORKSHOP_IMPORT_BUILD BUILD
+STEAM_WORKSHOP_IMPORT_SHARE SHARE
+STEAM_WORKSHOP_IMPORT_UPDATE UPDATE
+STEAM_WORKSHOP_IMPORT_UPLOADING Uploading...
+STEAM_WORKSHOP_IMPORT_NO_BLUEPRINT No blueprints found
+STEAM_WORKSHOP_IMPORT_MODS_MISSING MODS MISSING
+STEAM_WORKSHOP_IMPORT_PARTS_MISSING INSUFFICIENT PARTS
+STEAM_WORKSHOP_IMPORT_SEARCH_TEXT Search
+
+STEAM_WORKSHOP_EXPORT_TITLE SAVE BLUEPRINT
+STEAM_WORKSHOP_EXPORT_SAVE SAVE
+STEAM_WORKSHOP_EXPORT_UNNAMED Unnamed
+
+UGC_AND_CONTENT and
+UGC_AND_CORE_GAME and core game!
+
+UGC_ASSET_MOD Asset mod
+
+UGC_ERROR_ID_CONFLICT Id conflict between
+
+CONTROLLER_HORN_PITCH PITCH
+
+CONTROLLER_MOTOR_GAS_ENGINE GAS ENGINE
+CONTROLLER_MOTOR_ELECTRIC_ENGINE ELECTRIC ENGINE
+CONTROLLER_MOTOR_OFF OFF
+
+CONTROLLER_SPRINGJOINT_TITLE SUSPENSION RESISTANCE
+
+CONTROLLER_SENSOR_TITLE SENSOR RANGE
+CONTROLLER_SENSOR_MODE Mode
+CONTROLLER_SENSOR_MODE_SWITCH Switch
+CONTROLLER_SENSOR_MODE_BUTTON Button
+CONTROLLER_SENSOR_SOUND Sound
+CONTROLLER_SENSOR_COLOR Color Mode
+
+CONTROLLER_SEQUENCE_TITLE ROTATION EDITOR
+CONTROLLER_SEQUENCE_NO_BEARINGS NO BEARINGS CONNECTED
+CONTROLLER_SEQUENCE_SLOW Slow
+CONTROLLER_SEQUENCE_FAST Fast
+
+CONTROLLER_THRUSTER_TITLE THRUSTER
+
+CONTROLLER_TONE_TITLE NOTES
+CONTROLLER_TONE_VOLUME VOLUME
+CONTROLLER_TONE_BUTTON_RETRO RETRO
+CONTROLLER_TONE_BUTTON_DANCE DANCE
+
+CONTROLLER_LOGIC_TITLE LOGIC GATE
+CONTROLLER_LOGIC_LABEL_BASIC BASIC
+CONTROLLER_LOGIC_LABEL_INVERTED INVERTED
+CONTROLLER_LOGIC_DESCRIPTION_AND Active if all of the linked triggers are active
+CONTROLLER_LOGIC_DESCRIPTION_OR Active if any of the linked triggers are active
+CONTROLLER_LOGIC_DESCRIPTION_XOR Active if only one of the linked triggers are active
+CONTROLLER_LOGIC_DESCRIPTION_NAND Active if any of the linked triggers are inactive
+CONTROLLER_LOGIC_DESCRIPTION_NOR Active if all of the linked triggers are inactive
+CONTROLLER_LOGIC_DESCRIPTION_XNOR Active if an even number of linked triggers are active
+
+CONTROLLER_TIMER_TITLE DELAY
+CONTROLLER_TIMER_SUFFIX_SECONDS s
+CONTROLLER_TIMER_SUFFIX_TICKS Ticks
+
+CONTROLLER_LIGHT_TITLE RANGE
+
+CONTROLLER_PISTON_TITLE PISTON
+CONTROLLER_PISTON_RANGE RANGE
+CONTROLLER_PISTON_SPEED SPEED
+
+TOOLS_PAINT_COLORS COLORS
+
+TOOL_TIP_IE_EDIT_DESCRIPTION EDIT DESCRIPTION
+TOOL_TIP_IE_EDIT_NAME EDIT NAME
+TOOL_TIP_IE_SAVE_CREATION SAVE THIS CREATION TO YOUR LIBRARY
+TOOL_TIP_IE_REMOVE_FROM_LIFT REMOVE THIS CREATION FROM THE LIFT
+TOOL_TIP_IE_BLOCK_NOT_FOUND BLOCK NOT FOUND
+TOOL_TIP_IE_OPEN_IN_STEAM_WORKSHOP OPEN IN STEAM WORKSHOP
+TOOL_TIP_IE_BROWSE_WORKSHOP BROWSE WORKSHOP
+TOOL_TIP_IE_BUILD_CREATION BUILD THIS CREATION
+TOOL_TIP_IE_LIFT_OCCUPIED THE LIFT IS ALREADY OCCUPIED
+TOOL_TIP_IE_UPLOAD_TO_WORKSHOP UPLOAD TO WORKSHOP
+TOOL_TIP_IE_UPDATE_ON_WORKSHOP UPDATE ON WORKSHOP
+TOOL_TIP_IE_DELETE_BLUEPRINT DELETE THIS BLUEPRINT
+TOOL_TIP_IE_NEW_THUMBNAIL MAKE NEW THUMBNAIL
+TOOL_TIP_IE_DRAG_TO_ROTATE DRAG TO ROTATE
+
+HANDBOOK_TOOLTIP_HOW_TO_PLAY HOW TO PLAY
+HANDBOOK_TOOLTIP_HOW_TO_BUILD_A_VEHICLE HOW TO BUILD A VEHICLE
+HANDBOOK_TOOLTIP_BEARING BEARING
+HANDBOOK_TOOLTIP_LIFT LIFT
+HANDBOOK_TOOLTIP_CONNECT_TOOL CONNECT TOOL
+HANDBOOK_TOOLTIP_DRIVERS_SEAT DRIVER'S SEAT
+HANDBOOK_TOOLTIP_GAS_ENGINE GAS ENGINE
+HANDBOOK_TOOLTIP_THRUSTER THRUSTER
+HANDBOOK_TOOLTIP_TRIGGERS TRIGGERS
+HANDBOOK_TOOLTIP_CONTROLLER CONTROLLER
+HANDBOOK_TOOLTIP_LOGIC_GATE LOGIC GATE
+HANDBOOK_TOOLTIP_FREQUENTLY_ASKED_QUESTIONS FREQUENTLY ASKED QUESTIONS
+
+HANDBOOK_HOLD_AND_DRAG Hold and Drag
+HANDBOOK_PRESS Press
+HANDBOOK_RELEASE Release
+HANDBOOK_HOLD Hold
+HANDBOOK_ARROW_KEYS Arrow Keys
+
+HANDBOOK_HOW_TO_PLAY_TITLE HOW TO PLAY
+
+HANDBOOK_HOW_TO_PLAY_PAGE1_SUBTITLE1 • Navigation & movement controls
+HANDBOOK_HOW_TO_PLAY_PAGE1_SUBTITLE2 • How to use your inventory & hotbar
+HANDBOOK_HOW_TO_PLAY_PAGE1_MOVE Move
+HANDBOOK_HOW_TO_PLAY_PAGE1_LOOK Look
+HANDBOOK_HOW_TO_PLAY_PAGE1_CAMERA Camera
+HANDBOOK_HOW_TO_PLAY_PAGE1_IN_OUT In / Out
+HANDBOOK_HOW_TO_PLAY_PAGE1_JUMP Jump
+HANDBOOK_HOW_TO_PLAY_PAGE1_SPRINT Sprint
+HANDBOOK_HOW_TO_PLAY_PAGE1_CROUCH Crouch
+HANDBOOK_HOW_TO_PLAY_PAGE1_INVENTORY Inventory
+HANDBOOK_HOW_TO_PLAY_PAGE1_HOTBAR Hotbar
+
+HANDBOOK_HOW_TO_PLAY_PAGE2_SUBTITLE1 • How to place, rotate and remove objects
+HANDBOOK_HOW_TO_PLAY_PAGE2_SUBTITLE2 • Scale base materials and change scaling direction
+HANDBOOK_HOW_TO_PLAY_PAGE2_ADJUST_POSITION Adjust position
+HANDBOOK_HOW_TO_PLAY_PAGE2_OBJECT_PLACE Place object
+HANDBOOK_HOW_TO_PLAY_PAGE2_OBJECT_REMOVE Remove object
+HANDBOOK_HOW_TO_PLAY_PAGE2_OBJECT_ROTATE Rotate object
+HANDBOOK_HOW_TO_PLAY_PAGE2_ROTATE_DIRECTION Rotate direction
+
+HANDBOOK_HOW_TO_PLAY_PAGE3_SUBTITLE • Learn about Scrap Mechanic’s blocks and parts
+HANDBOOK_HOW_TO_PLAY_PAGE3_BLOCKS Blocks
+HANDBOOK_HOW_TO_PLAY_PAGE3_BLOCKS_TEXT The most common building components, these material blocks can be made out of stone, wood, plastic or metal and can be scaled with a simple drag and release action. Ideal for building large structures with speed and comfort. Able to be deleted by holding the right mouse button and dragging. Blocks are marked with a blue line in your inventory.
+HANDBOOK_HOW_TO_PLAY_PAGE3_INTERACTIVE_PARTS Interactive Parts
+HANDBOOK_HOW_TO_PLAY_PAGE3_INTERACTIVE_PARTS_TEXT All interactive parts have a special function that will bring your creations to life by making them move, spin, drive, fly and more. It can be anything from a gas engine to a fully functioning radio, and are marked with an orange line in your inventory.
+HANDBOOK_HOW_TO_PLAY_PAGE3_PARTS Parts
+HANDBOOK_HOW_TO_PLAY_PAGE3_PARTS_TEXT Building parts with a unique shape and look, perfect for personalizing your creations. Parts can be anything from industrial steel support frames to a friendly little duck figurine, and are marked with a green line in your inventory.
+HANDBOOK_HOW_TO_PLAY_PAGE3_CONSUMABLES Consumables
+HANDBOOK_HOW_TO_PLAY_PAGE3_CONSUMABLES_TEXT Coming Soon...
+
+HANDBOOK_HOW_TO_PLAY_PAGE4_SUBTITLE • All about Scrap Mechanic’s tools
+HANDBOOK_HOW_TO_PLAY_PAGE4_CONNECT_TOOL Connect tool
+HANDBOOK_HOW_TO_PLAY_PAGE4_CONNECT_TOOL_TEXT Every mechanic’s best friend! Use to hook interactive parts together, for example: a gas engine to bearings or a thruster to a driver’s seat. There are lots of things you can connect together, and you get the job done by using the connect tool.
+HANDBOOK_HOW_TO_PLAY_PAGE4_LIFT Lift
+HANDBOOK_HOW_TO_PLAY_PAGE4_LIFT_TEXT Building on the lift will create freely movable constructions that won’t be fixed to the ground, as well as preventing bearings from moving for your ease of building. You can place any unanchored creations back on the lift at any time.
+HANDBOOK_HOW_TO_PLAY_PAGE4_SLEDGEHAMMER Sledgehammer
+HANDBOOK_HOW_TO_PLAY_PAGE4_SLEDGEHAMMER_TEXT This mighty sledgehammer will let you push loose items around by hitting them. You can also block incoming attacks with the right mouse button.
+HANDBOOK_HOW_TO_PLAY_PAGE4_PAINT_TOOL Paint tool
+HANDBOOK_HOW_TO_PLAY_PAGE4_PAINT_TOOL_TEXT Paint any part or block to personalize your creations or even make beautiful art! Paint using the left mouse button and delete with the right. Press Q to open the color selector. Simply hold down left mouse button and drag if you want to paint larger surfaces.
+HANDBOOK_HOW_TO_PLAY_PAGE4_WELD_TOOL Weld Tool
+HANDBOOK_HOW_TO_PLAY_PAGE4_WELD_TOOL_TEXT Weld your creations together! Select the Weld Tool and left-click on a loose creation, then left-click on a surface of another creation to weld them together. You can also join touching parts on the lift. Hold the left mouse button on the first part and drag to the part you wish to weld together.
+
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_TITLE HOW TO BUILD A VEHICLE
+
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE1_SUBTITLE1 • Place the lift on the ground, then build a base from blocks on the lift as shown.
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE1_SUBTITLE2 • Place the required bearings, wheels, driver’s seat and gas engine.
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE1_SUBTITLE3 • Connect it all together using the connect tool.
+
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE2_SUBTITLE1 • Make sure all connections are exactly as shown.
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE2_SUBTITLE2 • Set all bearings to the correct rotation and start the engine.
+HANDBOOK_HOW_TO_BUILD_A_VEHICLE_PAGE2_SUBTITLE3 Endless vehicles can be built by following these basic steps, so keep experimenting!
+
+HANDBOOK_BEARING_TITLE BEARING
+
+HANDBOOK_BEARING_PAGE1_SUBTITLE1 • Anything you attach to a bearing will rotate.
+HANDBOOK_BEARING_PAGE1_SUBTITLE2 • Can be powered by an engine or when linked to a controller using the connect tool
+HANDBOOK_BEARING_PAGE1_SUBTITLE3 • When connected to a driver's seat, bearings can be controlled with the keyboard.
+
+HANDBOOK_LIFT_TITLE LIFT
+
+HANDBOOK_LIFT_PAGE1_SUBTITLE1 • Build on the lift to prevent your creation from being anchored to the ground.
+HANDBOOK_LIFT_PAGE1_SUBTITLE2 • Will lock bearings in place during construction for your ease of building.
+HANDBOOK_LIFT_PAGE1_SUBTITLE3 • Removing the lift will release your creation, but you can re-place loose constructions onto the lift at any time.
+HANDBOOK_LIFT_PAGE1_ADJUST_HEIGHT Adjusting the height
+HANDBOOK_LIFT_PAGE1_PICKING_UP_OBJECTS Picking up loose objects
+HANDBOOK_LIFT_PAGE1_PICKING_UP_OBJECTS_CLICK_ON_OBJECT Click on object
+HANDBOOK_LIFT_PAGE1_PICKING_UP_OBJECTS_CLICK_ON_GROUND Click on ground
+
+HANDBOOK_CONNECT_TOOL_TITLE CONNECT TOOL
+
+HANDBOOK_CONNECT_TOOL_PAGE1_SUBTITLE1 • Allows you to connect interactive parts by dragging from one connect point to another as shown.
+HANDBOOK_CONNECT_TOOL_PAGE1_SUBTITLE2 • If you connect an engine to a bearing, you can right click to change its rotation.
+
+HANDBOOK_DRIVERS_SEAT_TITLE DRIVER'S SEAT
+
+HANDBOOK_DRIVERS_SEAT_PAGE1_SUBTITLE1 • If you hook up the driver's seat to a bearing using the connect tool, you'll be in direct control of the bearing
+HANDBOOK_DRIVERS_SEAT_PAGE1_SUBTITLE2    whilst seated. The same applies to engines.
+HANDBOOK_DRIVERS_SEAT_PAGE1_SUBTITLE3 • Connected buttons or switches can also be activated from the seat.
+
+HANDBOOK_ENGINE_TITLE GAS ENGINE
+
+HANDBOOK_ENGINE_PAGE1_SUBTITLE1 • Makes up to 5 bearings rotate when connected.
+HANDBOOK_ENGINE_PAGE1_SUBTITLE2 • Ignition and speed controls are accessed by pressing E.
+HANDBOOK_ENGINE_PAGE1_SUBTITLE3 • Can be connected to the driver's seat as shown.
+
+HANDBOOK_THRUSTER_TITLE THRUSTER
+
+HANDBOOK_THRUSTER_PAGE1_SUBTITLE1 Thrusters send your creations flying!
+HANDBOOK_THRUSTER_PAGE1_SUBTITLE2 • Activated by connecting any type of trigger or the driver's seat.
+HANDBOOK_THRUSTER_PAGE1_SUBTITLE3 • Make sure that the object you want to send flying is not stuck to the ground.
+
+HANDBOOK_TRIGGERS_TITLE TRIGGERS
+
+HANDBOOK_TRIGGERS_PAGE1_SUBTITLE1 • Used to activate other interactive parts like engines, thrusters or the controller and more.
+HANDBOOK_TRIGGERS_PAGE1_SUBTITLE2 • There are 3 types of triggers that work in different ways.
+HANDBOOK_TRIGGERS_PAGE1_SWITCH Switch
+HANDBOOK_TRIGGERS_PAGE1_SWITCH_TEXT Toggles connected creations on and off.
+HANDBOOK_TRIGGERS_PAGE1_BUTTON Button
+HANDBOOK_TRIGGERS_PAGE1_BUTTON_TEXT Activates connected parts for as long as the button is held down.
+HANDBOOK_TRIGGERS_PAGE1_SENSOR Sensor
+HANDBOOK_TRIGGERS_PAGE1_SENSOR_TEXT Activates connected creations when some- thing moves within its range.
+
+HANDBOOK_CONTROLLER_TITLE CONTROLLER
+
+HANDBOOK_CONTROLLER_PAGE1_SUBTITLE1 • Enables the creation of transforming, moving machines.
+HANDBOOK_CONTROLLER_PAGE1_SUBTITLE2 • Program your bearings to rotate at set degrees in a set sequence and activate by using a trigger.
+HANDBOOK_CONTROLLER_PAGE1_SUBTITLE3 Let's learn the basics by building an automatic door.
+
+HANDBOOK_CONTROLLER_PAGE2_SUBTITLE1 • Hold the left mouse button and drag left or right to set the degrees on the dials as shown.
+HANDBOOK_CONTROLLER_PAGE2_SUBTITLE2 • Activate the door with the trigger that you connected to the controller.
+HANDBOOK_CONTROLLER_PAGE2_SUBTITLE3 The controller is an indispensable interactive part with endless possibilities.
+HANDBOOK_CONTROLLER_PAGE2_ADJUST_SPEED Adjusts the speed of the Controller
+HANDBOOK_CONTROLLER_PAGE2_ADJUST_START_ANGLE Adjust the starting position
+HANDBOOK_CONTROLLER_PAGE2_FINE_TUNE_ANGLE Fine-tune the angle by holding down
+HANDBOOK_CONTROLLER_PAGE2_TOGGLE_REPEAT Toggles the sequence to repeat indefinitely
+HANDBOOK_CONTROLLER_PAGE2_TOGGLE_BACK_AND_FORTH Toggles the sequence to play back and forth
+
+HANDBOOK_LOGIC_GATE_TITLE LOGIC GATE
+
+HANDBOOK_LOGIC_GATE_PAGE1_SUBTITLE1 • Allows you to create logic based solutions.
+HANDBOOK_LOGIC_GATE_PAGE1_SUBTITLE2 • The logic block is a powerful block that allows you to program in physical form.
+HANDBOOK_LOGIC_GATE_PAGE1_SUBTITLE3 • Follow these steps to learn a basic set up for opening one door with two separate triggers.
+
+HANDBOOK_FAQ_TITLE COMMON QUESTIONS
+
+HANDBOOK_FAQ_PAGE1_SUBTITLE1 • Feeling lost and frustrated?
+HANDBOOK_FAQ_PAGE1_SUBTITLE2 • Here you might find answers to your problems.
+HANDBOOK_FAQ_PAGE1_CREATION_FELL_OVER Oh no! My creation fell over, how do I lift it up again?
+HANDBOOK_FAQ_PAGE1_CREATION_FELL_OVER_ANSWER With the Lift selected click on your creation with the left mouse button (LMB), now point at an empty spot on the ground and press the left mouse button (LMB) again to place your creation. Your creation should now appear on the ground, and be placed back on the lift.
+HANDBOOK_FAQ_PAGE1_FINDING_THE_INVENTORY Where do I find the inventory with more building parts?
+HANDBOOK_FAQ_PAGE1_FINDING_THE_INVENTORY_ANSWER You open the inventory by pressing the "I" key. When you find a part you want to use, drag it from the inventory in to your hotbar below.
+HANDBOOK_FAQ_PAGE1_ROTATE_PARTS How do I rotate parts?
+HANDBOOK_FAQ_PAGE1_ROTATE_PARTS_ANSWER You rotate parts by pressing the "Q" key or "Shift + Q"
+HANDBOOK_FAQ_PAGE1_PARTS_PLACE_OR_REMOVE How do I place or remove parts?
+HANDBOOK_FAQ_PAGE1_PARTS_PLACE_ANSWER To place a part. select a building part in your hotbar and press left mouse button (LMB)
+HANDBOOK_FAQ_PAGE1_PARTS_REMOVE_ANSWER To pick it up again, aim at the part and hold right mouse button (RMB)
+HANDBOOK_FAQ_PAGE1_REMOVE_CONNECTIONS How do I remove connections with the connect tool?
+HANDBOOK_FAQ_PAGE1_REMOVE_CONNECTIONS_ANSWER Simply grab the connection at one end and drag it to the other connect point again.
+HANDBOOK_FAQ_PAGE1_CAMERA_ANGLE How do I change the camera angle?
+HANDBOOK_FAQ_PAGE1_CAMERA_ANGLE_ANSWER Hold down the ALT key and use the mouse wheel to zoom the camera in and out
+
+CHALLENGE_CHOOSE_PACK CHOOSE CHALLENGE PACK
+CHALLENGE_CHOOSE_LEVEL CHOOSE CHALLENGE
+CHALLENGE_LEVEL_NOT_COMPLETED Level not completed
+CHALLENGE_START PLAY
+CHALLENGE_RESTART RESTART
+CHALLENGE_RESET RESET
+CHALLENGE_NEXT NEXT
+CHALLENGE_FINISH FINISH
+CHALLENGE_WIN You win!
+CHALLENGE_DOWNLOAD DOWNLOAD CHALLENGES
+
+CHALLENGE_BUILDER CHALLENGE BUILDER
+CHALLENGE_BUILDER_REMOVE REMOVE
+CHALLENGE_BUILDER_ADD ADD TO CHALLENGE PACK
+CHALLENGE_BUILDER_BUILD BUILD
+CHALLENGE_BUILDER_NOT_COMPLETED You need to beat this Challenge before it can be shared
+
+CHALLENGE_BUILDER_PACKS CHALLENGE PACKS
+CHALLENGE_BUILDER_NEW_PACK NEW CHALLENGE PACK
+CHALLENGE_BUILDER_SAVE_BEFORE_EXIT Save before exiting?

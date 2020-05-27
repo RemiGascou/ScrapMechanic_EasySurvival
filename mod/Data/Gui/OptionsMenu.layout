@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" name="OptionsMainPanel" position_real="0.21901 0.000462963 0.56276 0.491204">
+        <Widget type="Widget" skin="InventoryBackground" name="Background" position_real="0.000462963 0.000943396 1.00046 0.906604">
+            <Property key="InheritsPick" value="true" />
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="TextBox" skin="TextBox" name="Controls" position_real="0.0282407 0.0427083 0.153241 0.084375">
+                <Property key="Caption" value="#{MENU_OPTIONS_CONTROLS}" />
+                <Property key="FontName" value="ButtonCaptionLarge" />
+                <Property key="TextAlign" value="Default" />
+                <UserString key="Clickable" value="Yes" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Audio" position_real="0.204167 0.0427083 0.0930556 0.084375">
+                <Property key="Caption" value="#{MENU_OPTIONS_AUDIO}" />
+                <Property key="FontName" value="ButtonCaptionLarge" />
+                <Property key="TextAlign" value="Default" />
+                <UserString key="Clickable" value="Yes" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" position_real="0.0282407 0.136458 0.940278 0.00729167" />
+            <Widget type="TextBox" skin="TextBox" name="Graphics" position_real="0.329167 0.0427083 0.139352 0.084375">
+                <Property key="Caption" value="#{MENU_OPTIONS_GRAPHICS}" />
+                <Property key="FontName" value="ButtonCaptionLarge" />
+                <UserString key="Clickable" value="Yes" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Display" position_real="0.505093 0.0427083 0.106944 0.084375">
+                <Property key="Caption" value="#{MENU_OPTIONS_DISPLAY}" />
+                <Property key="FontName" value="ButtonCaptionLarge" />
+                <UserString key="Clickable" value="Yes" />
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" name="BackgroundLines" position_real="0.0282407 0.136458 0.940278 0.755208">
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.111878 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.222376 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.332873 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.44337 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.553867 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.664365 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.774862 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.885359 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+                <Widget type="Widget" skin="WhiteSkin" position_real="0.000492611 0.995856 1.00049 0.00690608">
+                    <Property key="Colour" value="0.564706 0.564706 0.564706" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" name="OptionsFrame" position_real="0.0282407 0.146875 0.963426 0.823958" />
+        </Widget>
+    </Widget>
+</MyGUI>

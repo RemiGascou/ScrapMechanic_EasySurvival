@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" name="OptionsMenuPageMainPanel" position_real="0.000480769 0.00126582 0.976442 1.00127">
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_0" position_real="0.000492611 0.00632911 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_0" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_0" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_1" position_real="0.000492611 0.107595 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_1" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_1" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_2" position_real="0.000492611 0.208861 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_2" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_2" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_3" position_real="0.000492611 0.310127 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_3" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_3" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_4" position_real="0.000492611 0.411392 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_4" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_4" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_5" position_real="0.000492611 0.512658 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_5" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_5" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_6" position_real="0.000492611 0.613924 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_6" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_6" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_7" position_real="0.000492611 0.71519 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_7" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_7" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_8" position_real="0.000492611 0.816456 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_8" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_8" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_9" position_real="0.517734 0.00632911 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_9" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_9" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_10" position_real="0.517734 0.107595 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_10" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_10" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_11" position_real="0.517734 0.208861 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_11" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_11" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_12" position_real="0.517734 0.310127 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_12" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_12" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_13" position_real="0.517734 0.411392 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_13" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_13" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_14" position_real="0.517734 0.512658 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_14" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_14" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_15" position_real="0.517734 0.613924 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_15" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_15" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_16" position_real="0.517734 0.71519 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_16" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_16" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" align="Left Top" name="ITEM_17" position_real="0.517734 0.816456 0.483251 0.0822785">
+            <Widget type="TextBox" skin="TextBox" name="Label" position_real="0.00102041 0.015625 0.460204 0.953125">
+                <Property key="Caption" value="NAME_17" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Left VCenter" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="Value" position_real="0.521429 0.015625 0.429592 0.953125">
+                <Property key="Caption" value="VALUE_17" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMLeft" name="Decrease" position_real="0.480612 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&lt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SMRight" name="Increase" position_real="0.95 0.015625 0.0418367 0.953125">
+                <Property key="Caption" value="&gt;" />
+                <Property key="FontName" value="OptionsText" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="SMButton" name="Default" position_real="0.000492611 0.925316 0.108867 0.0772152">
+            <Property key="Caption" value="#{MENU_OPTION_DEFAULT}" />
+            <Property key="FontName" value="ButtonCaptionSmall" />
+        </Widget>
+    </Widget>
+</MyGUI>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 0.975961 1" name="ModEasySurvivalMainPanel">
+        <Widget type="Widget" skin="PanelEmpty" position_real="0 0.00759494 0.472906 0.0810127" align="Left Top" name="Test">
+            <Widget type="TextBox" skin="TextBox" position_real="0 0 0.4375 1" name="Label">
+                <Property key="Caption" value="Graphics quality"/>
+                <Property key="FontName" value="Futura.34.manual"/>
+                <Property key="TextAlign" value="Left VCenter"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position_real="0.5 0 0.4375 1" name="Value">
+                <Property key="Caption" value="Graphics quality"/>
+                <Property key="FontName" value="Futura.34.manual"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="Button" skin="SMLeft" position_real="0.458333 0 0.0416667 0.9375" name="Decrease">
+                <Property key="Caption" value="&lt;"/>
+                <Property key="FontName" value="Futura.34.manual"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="Button" skin="SMRight" position_real="0.9375 0 0.0416667 0.9375" name="Increase">
+                <Property key="Caption" value="&gt;"/>
+                <Property key="FontName" value="Futura.34.manual"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="SMButton" position_real="0 0.924051 0.0837438 0.0759494" name="Default">
+            <Property key="Caption" value="DEFAULT"/>
+        </Widget>
+    </Widget>
+</MyGUI>
